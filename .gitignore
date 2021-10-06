@@ -1,2 +1,4 @@
 .spyproject/
 vids/
+*.pyc
+*.pyo
