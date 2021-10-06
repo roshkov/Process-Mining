@@ -36,7 +36,7 @@ def read_from_file(filename):
             
 
     
-def dependency_graph_file(log):
+def dependency_graph(log):
     F = dict()
     for caseid in log:
         for i in range (0, len(log[caseid]) -1):
@@ -55,21 +55,26 @@ def dependency_graph_file(log):
             
 
  
+# Testing. uncomment to see results
    
-log = read_from_file('extension-log.xes')
-dg = dependency_graph_file(log)
+# log = read_from_file('extension-log.xes')
+# dg = dependency_graph(log)
 
 
 # print (log)
 
 # general statistics: for each case id the number of events contained
-for case_id in sorted(log):
-    print((case_id, len(log[case_id])))
+# for case_id in sorted(log):
+#     print((case_id, len(log[case_id])))
 
 # details for a specific event of one case
-case_id = "case_123"
-event_no = 0
-print((log[case_id][event_no]["concept:name"], log[case_id][event_no]["org:resource"], log[case_id][event_no]["time:timestamp"],  log[case_id][event_no]["cost"]))
+# case_id = "case_123"
+# event_no = 0
+# print((log[case_id][event_no]["concept:name"], log[case_id][event_no]["org:resource"], log[case_id][event_no]["time:timestamp"],  log[case_id][event_no]["cost"]))
+
+# for ai in sorted(dg.keys()):
+#     for aj in sorted(dg[ai].keys()):
+#         print (ai, '->', aj, ':', dg[ai][aj])
 
 
 

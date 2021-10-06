@@ -54,7 +54,7 @@ def dependency_graph_file(log):
     return F
             
 
- 
+# Testing. uncomment to see results
    
 # log = read_from_file('extension-log.xes')
 # dg = dependency_graph_file(log)
