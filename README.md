@@ -1,5 +1,6 @@
 # Process-Mining
 
+_Make sure you are on the 'main' branch :)_
 
 This the directory with exercise implementations for Process Mining course at DTU
 
