@@ -85,10 +85,10 @@ log = log_as_dictionary(f)
 dg = dependency_graph(log)
 
  
-#print final data   
-# for ai in sorted(dg.keys()):
-#    for aj in sorted(dg[ai].keys()):
-#        print (ai, '->', aj, ':', dg[ai][aj])
+# print final data   
+for ai in sorted(dg.keys()):
+    for aj in sorted(dg[ai].keys()):
+        print (ai, '->', aj, ':', dg[ai][aj])
 
 
 
