@@ -1,6 +1,4 @@
 # Process-Mining
 
 
-This the directory with exercise implementations for Process Mining course at DTU
-
-1. Petri nets
+_Make sure you are on the 'main' branch :)_
